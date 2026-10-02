@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration form</title>
+<style>
+ table{
+  border: 1px solid black;
+  padding: 10px;
+border-spacing: 5px;
+  }
+</style>
+</head>
+<body>
+<table>
+<form>
+<tr><td><label for ="fname">Name:</label></td>
+<td><input type="text"  id="fname" name="fname"></td>
+</tr><br>
+<tr><td><label for="psw">Password:</label></td>
+<td><input type="password" id="psw" name="psw"></td><tr><br><br>
+<tr><td><label for="num">ID:</label></td>
+<td><input type="number" id="num" name="num"></td><tr><br>
+<tr><td><label for="dob">DOB:</label></td>
+<td><input type="date" id="dob" name="dob"></td><tr>
+<tr>
+<tr><td>Gender:</td>
+<td><label for="male">Male</label>
+  <input type="radio" id="male" name="gender" ><br>
+<label for="female">Female</label>
+  <input type="radio" id="female" name="gender" value="Female"><br>
+<label for="others">Others</label>
+  <input type="radio" id="Others" name="gender" value="other"><td></tr>
+<br><br>
+<tr><td><label>Hobbies:</label></td>
+<td><label for="Reading">Reading:</label>
+  <input type="checkbox" id="Reading" name="Game" ><br>
+<label for="Writing">Writing:</label>
+  <input type="checkbox" id="Writing" name="game" ><br>
+<label for="singing">Singing:</label>
+  <input type="checkbox" id="singing" name="game" ></td>
+</tr><br><br>
+<tr><td><label for="lan">Languages:</label></td>
+<td><select id="lan" name="lan">
+<option value="HTML">HTML</option>
+<option value="CSS">CSS</option>
+<option value="JS">JS</option>
+</select></td><br><br>
+</tr>
+<tr><td colspan="2" style="text-align: center;"><input type="submit" value="submit">
+<input type="reset" value="reset"></td></tr>
+ </form>
+</table>
+</body>
+</html>
+
