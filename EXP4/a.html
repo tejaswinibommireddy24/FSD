@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Selectors</title>
+    <style>
+        p {
+            color: blue;
+        }
+        #heading {
+            color: red;
+        }
+        .box {
+            background-color: lightgray;
+        }
+        h2, h3 {
+            color: green;
+        }
+        * {
+            font-family: Arial;
+        }
+        div p {
+            color: purple;
+        }
+        div > span {
+            color: orange;
+        }
+        h4 + p {
+            background-color: yellow;
+        }
+        h5 ~ p {
+            color: brown;
+        }
+        a:hover {
+            color: red;
+        }
+        p::first-letter {
+            font-size: 30px;
+            color: red;
+        }
+        input[type="text"] {
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">CSS Selectors</h1>
+    <h2>Simple Selectors</h2>
+    <p>This is an element selector.</p>
+    <p class="box">This is a class selector.</p>
+    <h3>Group Selector</h3>
+ 
+    <h2>Combinator Selectors</h2>
+    <div>
+        <p>This is a descendant selector.</p>
+        <span>This is a child selector.</span>
+    </div>
+    <h4>Adjacent Sibling</h4>
+    <p>This paragraph is adjacent to h4.</p>
+    <h5>General Sibling</h5>
+    <p>This is a general sibling.</p>
+    <p>This is another general sibling.</p>
+  
+    <h2>Pseudo-class Selector</h2>
+    <a href="https://www.google.com">Move mouse over this link</a>
+   
+    <h2>Pseudo-element Selector</h2>
+    <p>This paragraph demonstrates the first-letter pseudo-element.</p>
+
+    <h2>Attribute Selector</h2>
+    <input type="text" placeholder="Enter your name">
+</body>
+</html>
